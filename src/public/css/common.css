@@ -1,0 +1,32 @@
+html,body{
+  --color-main-yellow:#F5C800;
+  --color-sub-orange:#FFA929;
+  --color-background:#F8F8F8;
+  --color-sub-grey:#E0DFDE;
+  --border-: 1px solid #eee;
+  background-color: var(--color-background);
+  height: 100vh;
+  overflow: auto;
+}
+
+.header{
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.header a{
+  text-decoration: none;
+  color: var(--color-main-yellow);
+  font-size: 30px;
+}
+
+.content{
+  padding: 0 32px;
+  height:calc(100vh - 60px - 60px);
+}
+
+.title{
+  margin-top: 16px;
+}
+
+

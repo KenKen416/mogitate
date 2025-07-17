@@ -1,7 +1,6 @@
 .content {
   width: 70%;
   margin: 32px auto 0;
-  /* text-align: center; */
   height: calc(100% - 64px);
   position: relative;
 }
@@ -78,24 +77,27 @@ p {
   height: calc(15%);
   display: flex;
   justify-content: center;
+  align-items: end;
   gap: 24px;
 }
 
 .function a,
-.function button,
-.delete button {
+.function button {
   width: 150px;
   display: block;
   height: 80%;
   max-height: 64px;
   text-align: center;
-padding: 6px;
+  padding: 6px;
   border: none;
   text-decoration: none;
   font-size: 20px;
   border-radius: 10px;
   color: black;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .function a {
@@ -110,15 +112,12 @@ padding: 6px;
 
 
 .delete button {
-  border-bottom: 1px solid red;
-  background: red;
-  font-weight: bold;
-  border-radius: 0;
+  background-color: inherit;
+  display: inline;
   position: absolute;
-  height:calc((100% - 24px - 8px) * 15%);
-  max-height: 32px;
-  bottom: 80px;
-  right: -150px;
-  /* transform: translate(0, -145px); */
-  color:white;
+  bottom: 0;
+  right: 0;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }

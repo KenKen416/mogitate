@@ -1,35 +1,34 @@
-html,body{
-  --color-main-yellow:#F5C800;
-  --color-sub-orange:#FFA929;
-  --color-background:#F8F8F8;
-  --color-sub-grey:#E0DFDE;
+html,
+body {
+  --color-main-yellow: #F5C800;
+  --color-sub-orange: #FFA929;
+  --color-background: #F8F8F8;
+  --color-sub-grey: #E0DFDE;
   --border-: 1px solid #eee;
   background-color: var(--color-background);
   height: 100vh;
   overflow: auto;
 }
 
-.header{
+.header {
   padding: 10px 20px;
   background-color: white;
   height: 65px;
 }
 
-.header a{
+.header a {
   text-decoration: none;
   color: var(--color-main-yellow);
   font-size: 30px;
 }
 
-main{
+main {
   padding: 0 32px;
   margin: 0;
-  height:calc(100vh - 65px);
+  height: calc(100vh - 65px);
 }
 
-.error{
+.error {
   color: red;
   font-size: 0.8em;
 }
-
-

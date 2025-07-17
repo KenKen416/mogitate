@@ -64,7 +64,7 @@
     </div>
     <div class="form__description">
       <p>商品説明 <span class="required">必須</span></p>
-      <textarea class="form__description-input" name="description" placeholder="商品の説明を入力" >{{old('description')}}</textarea>
+      <textarea class="form__description-input" name="description" placeholder="商品の説明を入力">{{old('description')}}</textarea>
       <div class="error">
         @error('description')
         {{$message}}
@@ -78,7 +78,7 @@
   </form>
 </div>
 
-{{-- ★★★ プレビュー表示用スクリプトを追加 ★★★ --}}
+
 <script>
   document.getElementById('imageInput').addEventListener('change', function(e) {
     const file = e.target.files[0];

@@ -50,7 +50,6 @@
   </div>
   <div class="items">
     <div class="items__list">
-      <!-- 繰り返し処理 -->
       @if($products->count())
       @foreach($products as $product)
       <a href="{{route('product.detail',$product->id)}}" class="items__card">

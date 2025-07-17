@@ -9,7 +9,7 @@ h1 {
   margin: 0;
 }
 
-.success{
+.success {
   width: 40%;
   background-color: aquamarine;
   color: red;
@@ -19,19 +19,25 @@ h1 {
   animation: fadeOut 4s;
   animation-fill-mode: both;
 }
-@keyframes fadeOut{
-  0%{opacity:1;}
-  100%{opacity: 0;}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.button-register{
+.button-register {
   text-decoration: none;
   color: black;
   background-color: var(--color-sub-orange);
   padding: 4px 16px;
   height: 32px;
   border-radius: 8px;
-  margin: 8px 0 ;
+  margin: 8px 0;
   cursor: pointer;
 }
 
@@ -115,7 +121,8 @@ h1 {
   height: 24px;
   padding: 2px 8px;
 }
-.sort__tag a{
+
+.sort__tag a {
   margin: 8px;
   text-decoration: none;
   color: #ccc;
@@ -137,8 +144,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: calc((100% - 32% * 3) / 2);
-  /* justify-content: space-between; */
-  /* align-content: flex-start; */
 }
 
 .items__card {
@@ -182,7 +187,6 @@ h1 {
 }
 
 
-/* ページネーション */
 
 nav[role="navigation"] {
   display: flex;

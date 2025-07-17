@@ -27,7 +27,7 @@ class ProductsListController extends Controller
         $product = Product::findOrFail($id);
         $product->seasons()->detach();
         $product->delete();
-        return redirect(route('products.index'))->with('success','商品の削除が完了しました');
+        return redirect(route('products.index'))->with('success', '商品の削除が完了しました');
     }
     public function update(UpdateRequest $request)
     {
@@ -43,7 +43,7 @@ class ProductsListController extends Controller
         }
         $product->update($data);
         $product->seasons()->sync($request->seasons);
-        return redirect()->route('products.index')->with('success','更新が完了しました');
+        return redirect()->route('products.index')->with('success', '更新が完了しました');
     }
     public function search(Request $request)
     {
@@ -77,6 +77,6 @@ class ProductsListController extends Controller
         ];
         $product = Product::create($data);
         $product->seasons()->attach($request->seasons);
-        return redirect()->route('products.index')->with('success','商品の新規登録が成功しました');
+        return redirect()->route('products.index')->with('success', '商品の新規登録が成功しました');
     }
 }

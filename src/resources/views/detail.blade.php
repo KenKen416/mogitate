@@ -78,12 +78,13 @@
   <form action="{{route('product.destroy',$product->id)}}" class="delete" method="post">
     @method('DELETE')
     @csrf
-    <button>削除</button>
+    <button>
+      <img src="{{asset('storage/images/TiTrash.png')}}" alt="">
+    </button>
   </form>
 </div>
 
 
-{{-- ★★★ プレビュー表示用スクリプトを追加 ★★★ --}}
 <script>
   document.getElementById('imageInput').addEventListener('change', function(e) {
     const file = e.target.files[0];

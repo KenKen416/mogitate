@@ -1,6 +1,6 @@
 main {
   width: 60%;
- 
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,6 @@ p {
   vertical-align: middle;
 }
 
-/* 高さ関係 */
 .form__name,
 .form__price,
 .form__season,
@@ -62,7 +61,6 @@ p {
   height: 20%;
 }
 
-/* 高さ関係ここまで */
 
 .form__name-input,
 .form__price-input {
@@ -75,7 +73,7 @@ p {
   height: calc(100% - 25px * 2 - 24px)
 }
 
-.form__description-input{
+.form__description-input {
   height: calc(100% - 25px);
   max-height: 108px;
   width: 100%;
@@ -87,7 +85,9 @@ p {
   align-content: center;
   gap: 16px;
 }
-.form__function-back,.form__function-submit{
+
+.form__function-back,
+.form__function-submit {
   width: 150px;
   text-align: center;
   display: flex;
@@ -102,9 +102,11 @@ p {
   border-radius: 8px;
   cursor: pointer;
 }
-.form__function-back{
+
+.form__function-back {
   background-color: #ddd;
 }
+
 .form__function-submit {
-  background-color:var(--color-main-yellow);
+  background-color: var(--color-main-yellow);
 }

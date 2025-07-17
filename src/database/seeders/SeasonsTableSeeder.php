@@ -15,10 +15,13 @@ class SeasonsTableSeeder extends Seeder
     public function run()
     {
         $seasons = [
-            '春','夏','秋','冬'
+            '春',
+            '夏',
+            '秋',
+            '冬'
         ];
-        foreach($seasons as $season){
-        Season::create(['name'=>$season]);
+        foreach ($seasons as $season) {
+            Season::create(['name' => $season]);
         }
     }
 }

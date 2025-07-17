@@ -2,10 +2,26 @@
   margin-top: 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
   margin: 0;
+}
+
+.success{
+  width: 40%;
+  background-color: aquamarine;
+  color: red;
+  height: 36px;
+  font-size: 24px;
+  padding-left: 16px;
+  animation: fadeOut 4s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut{
+  0%{opacity:1;}
+  100%{opacity: 0;}
 }
 
 .button-register{

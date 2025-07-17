@@ -7,6 +7,9 @@
 @section('content')
 <div class="title">
   <h1>商品一覧</h1>
+  @if(session('success'))
+  <div class="success">{{session('success')}}</div>
+  @endif
   <a class="button-register" href="{{route('product.register')}}">＋商品を追加</a>
 </div>
 <div class="main-contents">

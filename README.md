@@ -13,7 +13,7 @@
 - 商品登録機能（バリデーション付き）
 - 商品画像のプレビュー表示
 - 成功メッセージの表示（自動フェードアウト）
-
+- 画面はスクロールせずに、表示されるようにしています。
 ---
 
 ## 環境構築（Docker 使用）
@@ -56,26 +56,10 @@
 - Bootstrap4 :ページネーションに使用
 - JavaScript : 画像プレビュー用
 
-## ディレクトリ構成（抜粋）
-mogitate/
-├── docker/
-│   ├── nginx/
-│   │   └── default.conf
-│   ├── php/
-│   │   └── Dockerfile
-│   └── mysql/
-│       ├── data/
-│       └── my.cnf
-├── docker-compose.yml
-├── src/
-│   ├── app/
-│   │   └── Http/Controllers/ProductsListController.php
-│   │   └── Http/Requests/RegisterRequest.php, UpdateRequest.php
-│   ├── resources/views/
-│   └── public/storage/ （画像参照用）
-
+---
 ## ER図
 
+---
 ## URL
 - 開発環境：http://localhost/
 - phpMyAdmin:http://localhost:8080
